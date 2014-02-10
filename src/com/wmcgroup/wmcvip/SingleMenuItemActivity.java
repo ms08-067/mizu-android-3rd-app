@@ -8,7 +8,7 @@ import android.widget.TextView;
 public class SingleMenuItemActivity  extends Activity {
 	
 	// JSON Node names
-	private static final String TAG_TRANSACTIONS = "transactions";
+	//private static final String TAG_TRANSACTIONS = "transactions";
 	private static final String TAG_BEGINDATE = "BeginDate";
 	private static final String TAG_BEGINTIME = "BeginTime";
 	private static final String TAG_OUTLETCODE = "OutletCode";

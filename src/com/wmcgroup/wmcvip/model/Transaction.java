@@ -120,7 +120,7 @@ public class Transaction implements Parcelable {
 	@Override
 	// Duoc su dung cho truong hop ko co layout (listitem_transaction.xml), testing (layout nay cua Android android.R.layout.simple_list_item_1)
 	public String toString() {
-		NumberFormat nf = NumberFormat.getCurrencyInstance();
+		//NumberFormat nf = NumberFormat.getCurrencyInstance();
 		
 		String result = "";
 		

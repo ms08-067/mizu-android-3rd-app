@@ -73,7 +73,7 @@ public class AuthenticatorActivity extends AccountAuthenticatorActivity {
     private Boolean mConfirmCredentials = false;
 
     /** for posting authentication attempts back to UI thread */
-    private final Handler mHandler = new Handler();
+    //private final Handler mHandler = new Handler();
 
     private TextView mMessage;
 
