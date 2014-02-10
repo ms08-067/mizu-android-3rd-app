@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<transactions>
+  <transaction>
+    <Id>1</Id>
+    <BusinessDate>24/10/2013</BusinessDate>
+    <BeginDate>24/10/2013</BeginDate>
+    <BeginTime>09:07:36</BeginTime>
+    <EndDate>10/24/2013</EndDate>
+    <EndTime>09:08:42</EndTime>
+    <OutletCode>221</OutletCode>
+    <CheckNo>200754</CheckNo>
+    <MemberId>880014178101</MemberId>
+    <NetSale>179550</NetSale>
+    <ServiceCharge>8550</ServiceCharge>
+    <Tax>17955</Tax>
+    <ActualPaid>197505</ActualPaid>
+    <image>image_01</image>
+    <link>http://www.wmcvip.vn/01</link>
+   </transaction>
+   
+  <transaction>
+    <Id>2</Id>
+    <BusinessDate>24/10/2013</BusinessDate>
+    <BeginDate>24/10/2013</BeginDate>
+    <BeginTime>12:07:36</BeginTime>
+    <EndDate>10/24/2013</EndDate>
+    <EndTime>12:08:42</EndTime>
+    <OutletCode>131</OutletCode>
+    <CheckNo>300564</CheckNo>
+    <MemberId>880014178101</MemberId>
+    <NetSale>179550</NetSale>
+    <ServiceCharge>9550</ServiceCharge>
+    <Tax>37955</Tax>
+    <ActualPaid>297565</ActualPaid>
+    <image>image_02</image>
+    <link>http://www.wmcvip.vn/02</link>
+   </transaction>
+</transactions>
