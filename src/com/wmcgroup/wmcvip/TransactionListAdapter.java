@@ -29,6 +29,7 @@ public class TransactionListAdapter extends ArrayAdapter<Transaction> {
 
 	@Override
 	public View getView(int position, View convertView, ViewGroup parent) {
+		
 		LayoutInflater vi = (LayoutInflater)context.getSystemService(Context.LAYOUT_INFLATER_SERVICE); 
         View view = vi.inflate(R.layout.listitem_transaction, null);
 	
@@ -53,7 +54,6 @@ public class TransactionListAdapter extends ArrayAdapter<Transaction> {
         //------------
         tv = (TextView) view.findViewById(R.id.OutletCode);
         tv.setText("Restaurant Code: " + transaction.getOutletCode());
-        
         
         //------------
         tv = (TextView) view.findViewById(R.id.ActualPaid);
