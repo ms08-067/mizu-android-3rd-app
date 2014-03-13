@@ -1,15 +1,12 @@
 package com.wmcgroup.wmcvip.model;
 
-import java.text.NumberFormat;
-
-import com.wmcgroup.wmcvip.MainWMCVip;
-import com.wmcgroup.wmcvip.db.WMCVIPDBOpenHelper;
-
 import android.content.ContentValues;
 import android.database.Cursor;
 import android.os.Parcel;
 import android.os.Parcelable;
 import android.util.Log;
+
+import com.wmcgroup.wmcvip.db.WMCVIPDBOpenHelper;
 
 public class Transaction implements Parcelable {
 	

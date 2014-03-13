@@ -15,9 +15,10 @@
  */
 package com.wmcgroup.wmcvip.syncadapter;
 
-import com.wmcgroup.wmcvip.adapter.Constants;
-import com.wmcgroup.wmcvip.json.JSONParser;
-import com.wmcgroup.wmcvip.model.Transaction;
+import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Date;
 
 import org.apache.http.ParseException;
 import org.json.JSONArray;
@@ -40,11 +41,9 @@ import android.os.RemoteException;
 import android.text.TextUtils;
 import android.util.Log;
 
-import java.io.IOException;
-import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.HashMap;
+import com.wmcgroup.wmcvip.adapter.Constants;
+import com.wmcgroup.wmcvip.json.JSONParser;
+import com.wmcgroup.wmcvip.model.Transaction;
 
 /**
  * SyncAdapter implementation for syncing sample SyncAdapter contacts to the

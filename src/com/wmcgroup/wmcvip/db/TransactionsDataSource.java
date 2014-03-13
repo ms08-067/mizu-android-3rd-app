@@ -51,8 +51,8 @@ public class TransactionsDataSource {
 	}
 
 	public Transaction create(Transaction transaction) {
-		ContentValues values = new ContentValues();
 		
+		ContentValues values = new ContentValues();
 		values.put(WMCVIPDBOpenHelper.COLUMN_BUSINESSDATE, transaction.getBusinessDate());
 		values.put(WMCVIPDBOpenHelper.COLUMN_BEGINDATE, transaction.getBeginDate());
 		values.put(WMCVIPDBOpenHelper.COLUMN_BEGINTIME, transaction.getBeginTime());

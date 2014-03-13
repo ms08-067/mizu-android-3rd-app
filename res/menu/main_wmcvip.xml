@@ -3,13 +3,13 @@
     <item
         android:id="@+id/menu_settings"
         android:orderInCategory="100"
-        android:showAsAction="never"
+        android:showAsAction="ifRoom"
         android:title="@string/menu_settings"/>
 
     <item
         android:id="@+id/menu_all"
         android:orderInCategory="100"
-        android:showAsAction="always"
+        android:showAsAction="ifRoom"
         android:title="@string/menu_all"/>
 
     <item
@@ -27,7 +27,7 @@
     <item
         android:id="@+id/menu_mytransactions"
         android:orderInCategory="100"
-        android:showAsAction="always"
+        android:showAsAction="ifRoom"
         android:title="@string/menu_mytransactions"/>
 
 </menu>
