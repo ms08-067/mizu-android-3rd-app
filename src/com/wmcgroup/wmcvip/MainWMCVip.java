@@ -58,6 +58,19 @@ public class MainWMCVip extends ListActivity {
         
 		// Code Xu ly voi nut Dang Nhap
 		Button b = (Button) findViewById(R.id.btn_connect);
+		Button viewProfile = (Button) findViewById(R.id.btn_profile);
+		
+		viewProfile.setOnClickListener(new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				//Log.i("account_type",Constants.ACCOUNT_TYPE);
+				//Log.i("authtoken",Constants.AUTHTOKEN_TYPE);
+				getTokenForAccountProfileCreateIfNeeded(Constants.ACCOUNT_TYPE,Constants.AUTHTOKEN_TYPE);
+			}
+		});
+		
 		b.setOnClickListener(new View.OnClickListener() {
 			
 			@Override
@@ -133,18 +146,26 @@ public class MainWMCVip extends ListActivity {
 	}
 	
 	public void refreshDisplay() {
-		
+
 		boolean viewImages = settings.getBoolean(VIEWIMAGE, false);
-		
 		if (viewImages) {
 			ArrayAdapter<Transaction> adapter = new TransactionListAdapter(this, transactions);
 			setListAdapter(adapter);
-		} else {
-			ArrayAdapter<Transaction> adapter = new ArrayAdapter<Transaction>(this, 
-					android.R.layout.simple_list_item_1, transactions);
-			setListAdapter(adapter);
 		}
 		
+	}
+	public void refestDisplayDetailProfile() {
+			
+		Intent intent = new Intent(this,ProfileDetailActivity.class);
+		//intent.putExtra("transactions", transactions);
+		
+		Transaction transaction = transactions.get(1);
+		
+		intent.putExtra(".model.Transaction", transaction);
+		intent.putExtra("isMyTransactions", isMyTransactions);
+		
+		startActivity(intent);
+			
 	}
 	
 	@Override
@@ -214,7 +235,7 @@ public class MainWMCVip extends ListActivity {
                                 }
                                 curTransactions.close();
                             }
-                    		
+                            
                             // Gan transactions co duoc vao List Adapter
                             refreshDisplay();
                             
@@ -227,6 +248,53 @@ public class MainWMCVip extends ListActivity {
                 }
         , null);
     }
+    private void getTokenForAccountProfileCreateIfNeeded(String accountType, String authTokenType) {
+        final AccountManagerFuture<Bundle> future = mAccountManager.getAuthTokenByFeatures(accountType, authTokenType, null, this, null, null,
+                new AccountManagerCallback<Bundle>() {
+                    @Override
+                    public void run(AccountManagerFuture<Bundle> future) {
+                        Bundle bnd = null;
+                        try {
+                            bnd = future.getResult();
+                            authToken = bnd.getString(AccountManager.KEY_AUTHTOKEN);
+                            VIPAccount = bnd.getString(AccountManager.KEY_ACCOUNT_NAME);
+                            		
+                            if (authToken != null) {
+                                String accountName = bnd.getString(AccountManager.KEY_ACCOUNT_NAME);
+                                mConnectedAccount = new Account(accountName, Constants.ACCOUNT_TYPE);
+                                //initButtonsAfterConnect();
+                            }
+                            showMessage(((authToken != null) ? "SUCCESS!\ntoken: " + authToken : "FAIL"));
+                            Log.d(LOGTAG, "Bundle is " + bnd + " Account is: " + VIPAccount);
+                            
+                            // Lay transactions cua VIP Number, dua vao list
+                    		// Get Local Transactions from Phone Database via Provider
+                            transactions = new ArrayList<Transaction>();
+
+                            final ContentResolver resolver = getContentResolver();
+                            Cursor curTransactions = resolver.query(Constants.CONTENT_URI, null, "memberid='" + VIPAccount + "'", null, "businessdate DESC");
+                            
+                            if (curTransactions != null) {
+                                while (curTransactions.moveToNext()) {
+                                	transactions.add(new Transaction(curTransactions));
+                                }
+                                curTransactions.close();
+                            }
+                    		
+                            // Gan transactions co duoc vao List Adapter
+                            refestDisplayDetailProfile();
+                            
+                            
+                            Log.i(LOGTAG, "Local Transaction Records: " +transactions.size() + " for Account: " + VIPAccount);
+                        } catch (Exception e) {
+                            e.printStackTrace();
+                            showMessage(e.getMessage());
+                        }
+                    }
+                }
+        , null);
+    }
+    
     
     private void showMessage(final String msg) {
         if (msg == null || msg.trim().equals(""))

@@ -250,4 +250,5 @@ public class Transaction implements Parcelable {
          }
 
     };
+    
 }

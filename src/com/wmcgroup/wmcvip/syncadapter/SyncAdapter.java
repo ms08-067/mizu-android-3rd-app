@@ -80,6 +80,10 @@ public class SyncAdapter extends AbstractThreadedSyncAdapter {
 	final String TAG_ACTUALPAID = "total";
 	final String TAG_IMAGE = "";
 	
+
+	
+	
+	
     public SyncAdapter(Context context, boolean autoInitialize) {
         super(context, autoInitialize);
         mContext = context;

@@ -52,4 +52,5 @@ public class Constants {
 	public static final String PROVIDER_SERVICECHARGE = "servicecharge";
 	public static final String PROVIDER_TAX = "tax";
 	public static final String PROVIDER_ACTUALPAID = "actualpaid";
+	
 }

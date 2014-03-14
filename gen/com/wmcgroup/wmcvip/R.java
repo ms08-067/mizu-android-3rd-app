@@ -53,59 +53,70 @@ public final class R {
         public static final int wmcvip=0x7f02000c;
     }
     public static final class id {
-        public static final int ActualPaid=0x7f0c000e;
-        public static final int BeginDate=0x7f0c0021;
-        public static final int BeginTime=0x7f0c0022;
-        public static final int BusinessDate=0x7f0c001c;
-        public static final int BussinessDate=0x7f0c000c;
-        public static final int CheckNo=0x7f0c000b;
-        public static final int EndDate=0x7f0c0023;
-        public static final int EndTime=0x7f0c001d;
-        public static final int MemberId=0x7f0c001b;
-        public static final int NetSale=0x7f0c001e;
-        public static final int OutletCode=0x7f0c000d;
-        public static final int ServiceCharge=0x7f0c001f;
-        public static final int Tax=0x7f0c0020;
-        public static final int actualpaid_label=0x7f0c0009;
-        public static final int begindate_label=0x7f0c0017;
-        public static final int begintime_label=0x7f0c0018;
-        public static final int btn_connect=0x7f0c0016;
-        public static final int checkno_label=0x7f0c0006;
-        public static final int counter=0x7f0c0005;
+        public static final int ActualPaid=0x7f0c0017;
+        public static final int BeginDate=0x7f0c002b;
+        public static final int BeginTime=0x7f0c002c;
+        public static final int BusinessDate=0x7f0c0026;
+        public static final int BussinessDate=0x7f0c0015;
+        public static final int CheckNo=0x7f0c0014;
+        public static final int EndDate=0x7f0c002d;
+        public static final int EndTime=0x7f0c0027;
+        public static final int MemberId=0x7f0c0025;
+        public static final int NetSale=0x7f0c0028;
+        public static final int OutletCode=0x7f0c0016;
+        public static final int ServiceCharge=0x7f0c0029;
+        public static final int Tax=0x7f0c002a;
+        public static final int actualpaid_label=0x7f0c0012;
+        public static final int begindate_label=0x7f0c0021;
+        public static final int begintime_label=0x7f0c0022;
+        public static final int btn_connect=0x7f0c001f;
+        public static final int btn_profile=0x7f0c0020;
+        public static final int checkno_label=0x7f0c000f;
+        public static final int counter=0x7f0c000e;
+        public static final int dob=0x7f0c0008;
         public static final int drawer_layout=0x7f0c0000;
+        public static final int email=0x7f0c0009;
+        public static final int first_name=0x7f0c0005;
         public static final int frame_container=0x7f0c0001;
-        public static final int icon=0x7f0c0003;
-        public static final int imageView1=0x7f0c000a;
+        public static final int icon=0x7f0c000c;
+        public static final int imageView1=0x7f0c0013;
+        public static final int last_name=0x7f0c0006;
         public static final int list_slidermenu=0x7f0c0002;
-        public static final int member_label=0x7f0c0008;
-        public static final int memberid_label=0x7f0c0019;
-        public static final int menu_add=0x7f0c0029;
-        public static final int menu_all=0x7f0c0025;
-        public static final int menu_cheap=0x7f0c0026;
-        public static final int menu_delete=0x7f0c002a;
-        public static final int menu_fancy=0x7f0c0027;
-        public static final int menu_mytransactions=0x7f0c0028;
-        public static final int menu_settings=0x7f0c0024;
-        public static final int message=0x7f0c000f;
-        public static final int message_bottom=0x7f0c0013;
-        public static final int netsale_label=0x7f0c001a;
-        public static final int ok_button=0x7f0c0014;
-        public static final int outletcode_label=0x7f0c0007;
-        public static final int password_edit=0x7f0c0012;
-        public static final int textView1=0x7f0c0015;
-        public static final int title=0x7f0c0004;
-        public static final int username_edit=0x7f0c0010;
-        public static final int username_fixed=0x7f0c0011;
+        public static final int member_label=0x7f0c0011;
+        public static final int member_since=0x7f0c000b;
+        public static final int memberid_label=0x7f0c0023;
+        public static final int menu_add=0x7f0c0033;
+        public static final int menu_all=0x7f0c002f;
+        public static final int menu_cheap=0x7f0c0030;
+        public static final int menu_delete=0x7f0c0034;
+        public static final int menu_fancy=0x7f0c0031;
+        public static final int menu_mytransactions=0x7f0c0032;
+        public static final int menu_settings=0x7f0c002e;
+        public static final int message=0x7f0c0018;
+        public static final int message_bottom=0x7f0c001c;
+        public static final int netsale_label=0x7f0c0024;
+        public static final int ok_button=0x7f0c001d;
+        public static final int outletcode_label=0x7f0c0010;
+        public static final int password_edit=0x7f0c001b;
+        public static final int phone=0x7f0c000a;
+        public static final int point_balance=0x7f0c0003;
+        public static final int sex=0x7f0c0007;
+        public static final int textView1=0x7f0c001e;
+        public static final int title=0x7f0c000d;
+        public static final int username_edit=0x7f0c0019;
+        public static final int username_fixed=0x7f0c001a;
+        public static final int vip_number=0x7f0c0004;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
-        public static final int drawer_list_item=0x7f030001;
-        public static final int list_item=0x7f030002;
-        public static final int listitem_transaction=0x7f030003;
-        public static final int login_activity=0x7f030004;
-        public static final int main_wmcvip=0x7f030005;
-        public static final int single_list_item=0x7f030006;
-        public static final int transaction_detail=0x7f030007;
+        public static final int detail_profile_layout=0x7f030001;
+        public static final int drawer_list_item=0x7f030002;
+        public static final int list_item=0x7f030003;
+        public static final int listitem_transaction=0x7f030004;
+        public static final int login_activity=0x7f030005;
+        public static final int main_wmcvip=0x7f030006;
+        public static final int single_list_item=0x7f030007;
+        public static final int transaction_detail=0x7f030008;
     }
     public static final class menu {
         public static final int main_wmcvip=0x7f0b0000;
@@ -119,8 +130,9 @@ public final class R {
         public static final int app_name=0x7f080006;
         public static final int btn_connect=0x7f080012;
         public static final int btn_createfile=0x7f08000d;
+        public static final int btn_profile=0x7f080013;
         public static final int btn_readfile=0x7f08000e;
-        public static final int cancel_button_label=0x7f08001e;
+        public static final int cancel_button_label=0x7f08001f;
         public static final int copy_right=0x7f080005;
         /**  Content Description 
          */
@@ -130,32 +142,32 @@ public final class R {
         public static final int hello_world=0x7f080001;
         /**  The description for the invite contact flow 
          */
-        public static final int invite_contact_description=0x7f080021;
+        public static final int invite_contact_description=0x7f080022;
         public static final int label=0x7f080007;
         /**  Message shown in dialog if the username or password is invalid. 
          */
-        public static final int login_activity_loginfail_text_both=0x7f08001a;
+        public static final int login_activity_loginfail_text_both=0x7f08001b;
         /**  Message shown in dialog to prompt the user for their password 
          */
-        public static final int login_activity_loginfail_text_pwmissing=0x7f08001d;
+        public static final int login_activity_loginfail_text_pwmissing=0x7f08001e;
         /**  Message shown in dialog if the password is invalid 
          */
-        public static final int login_activity_loginfail_text_pwonly=0x7f08001b;
+        public static final int login_activity_loginfail_text_pwonly=0x7f08001c;
         /** 
         Message shown if the provided account doesn't support the current
         activity.
     
          */
-        public static final int login_activity_newaccount_text=0x7f08001c;
+        public static final int login_activity_newaccount_text=0x7f08001d;
         /**  Button to sign in after entering username and password 
          */
-        public static final int login_activity_ok_button=0x7f080018;
+        public static final int login_activity_ok_button=0x7f080019;
         /**  Label above password EditText 
          */
-        public static final int login_activity_password_label=0x7f080017;
+        public static final int login_activity_password_label=0x7f080018;
         /**  Label above username EditText 
          */
-        public static final int login_activity_username_label=0x7f080016;
+        public static final int login_activity_username_label=0x7f080017;
         public static final int menu_add=0x7f08000f;
         public static final int menu_all=0x7f080009;
         public static final int menu_cheap=0x7f08000a;
@@ -163,26 +175,26 @@ public final class R {
         public static final int menu_fancy=0x7f08000b;
         public static final int menu_mytransactions=0x7f08000c;
         public static final int menu_settings=0x7f080008;
-        public static final int profile_action=0x7f08001f;
+        public static final int profile_action=0x7f080020;
         public static final int provider_name=0x7f080011;
-        public static final int txt_transaction_detail=0x7f080014;
-        public static final int txt_transaction_list=0x7f080013;
+        public static final int txt_transaction_detail=0x7f080015;
+        public static final int txt_transaction_list=0x7f080014;
         /**  Message shown in progress dialog while app connects to the server 
          */
-        public static final int ui_activity_authenticating=0x7f080019;
+        public static final int ui_activity_authenticating=0x7f08001a;
         /**  Title string for Login activity
          */
-        public static final int ui_activity_title=0x7f080015;
+        public static final int ui_activity_title=0x7f080016;
         /**  The description for the view group button 
          */
-        public static final int view_group_description=0x7f080022;
-        public static final int view_profile=0x7f080020;
+        public static final int view_group_description=0x7f080023;
+        public static final int view_profile=0x7f080021;
         /**  The description for the view stream item 
          */
-        public static final int view_stream_item_description=0x7f080023;
+        public static final int view_stream_item_description=0x7f080024;
         /**  The description for the view stream item photo 
          */
-        public static final int view_stream_item_photo_description=0x7f080024;
+        public static final int view_stream_item_photo_description=0x7f080025;
     }
     public static final class style {
         /** 

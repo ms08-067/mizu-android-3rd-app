@@ -49,6 +49,7 @@
     
     <string name="provider_name">Transactions</string>
     <string name="btn_connect">Connect</string>
+    <string name="btn_profile">View Profile</string>
     <string name="txt_transaction_list">Check# History</string>
     <string name="txt_transaction_detail">Check# Detail</string>
     
